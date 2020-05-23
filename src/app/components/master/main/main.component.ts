@@ -53,7 +53,9 @@ export class MainComponent implements OnInit {
     script.src = "customjs.js";
     // body.className="rtls"
     head.appendChild(script);
+        
 
+    
     var script1  = document.createElement('script');
     script1.id   = "sidebarmenu";
     script1.type = 'text/javascript';
