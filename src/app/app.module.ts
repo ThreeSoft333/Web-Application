@@ -13,6 +13,7 @@ import { RightsidbarComponent } from './components/master/rightsidbar/rightsidba
 import { MasterModule } from './components/master/master.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './auth.service';
+import { EcommModule } from './components/ecomm/ecomm.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AuthService } from './auth.service';
   imports: [
     BrowserModule,
     MasterModule,
+    EcommModule,
     AppRoutingModule
   ],
   providers: [AuthService],
