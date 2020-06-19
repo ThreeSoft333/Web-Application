@@ -9,7 +9,7 @@ import { CoponesComponent } from './copones/copones.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderdetailsComponent } from './orderdetails/orderdetails.component';
 import { EcommRoutingModule } from './ecomm-routing.module';
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -25,6 +25,8 @@ import { EcommRoutingModule } from './ecomm-routing.module';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     EcommRoutingModule
   ]
 })

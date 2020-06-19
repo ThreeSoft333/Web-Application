@@ -5,21 +5,24 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { MainComponent } from './components/master/main/main.component';
 import { DashboardComponent } from './components/master/dashboard/dashboard.component';
 
-
-const routes: Routes = [
+export const Approutes: Routes = [
   
-  {path:'',component:LoginComponent,pathMatch:'full'},
+  {path:'',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'main',component: MainComponent,
   children: [
-    {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-    { path: 'dashboard',component:DashboardComponent }
+   //{path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+   { path: '',component:DashboardComponent },
+   {
+      path:'ecomm',
+      loadChildren:() => import('./components/ecomm/ecomm.module').then(m => m.EcommModule)
+   }
   ]
 }
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
+// export class AppRoutingModule { }

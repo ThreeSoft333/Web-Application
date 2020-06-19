@@ -10,8 +10,6 @@ export class AuthService {
   constructor(private router:Router) { }
 
   login(){
-    
 this.router.navigate(['main']);
-
   }
 }

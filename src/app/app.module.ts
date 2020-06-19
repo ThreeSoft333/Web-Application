@@ -10,10 +10,16 @@ import { NavbartopComponent } from './components/master/navbartop/navbartop.comp
 import { FooterComponent } from './components/master/footer/footer.component';
 import { LeftsidbarComponent } from './components/master/leftsidbar/leftsidbar.component';
 import { RightsidbarComponent } from './components/master/rightsidbar/rightsidbar.component';
-import { MasterModule } from './components/master/master.module';
-import { AppRoutingModule } from './app-routing.module';
+//import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './auth.service';
 import { EcommModule } from './components/ecomm/ecomm.module';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { NgSelectModule } from '@ng-select/ng-select';
+import {NgxWebstorageModule} from 'ngx-webstorage';
+import { NgxUiLoaderModule } from 'ngx-ui-loader';
+import { RouterModule } from '@angular/router';
+import {Approutes} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -29,9 +35,13 @@ import { EcommModule } from './components/ecomm/ecomm.module';
   ],
   imports: [
     BrowserModule,
-    MasterModule,
     EcommModule,
-    AppRoutingModule
+    NgxPaginationModule,
+    Ng2SearchPipeModule,
+    NgSelectModule,
+    NgxWebstorageModule.forRoot(),
+    NgxUiLoaderModule,
+    RouterModule.forRoot(Approutes,{useHash:true})
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 xxx(){
-//this.router.navigate(['main']);
-this.service.login();
+this.router.navigate(['main']);
+//this.service.login();
 }
 }

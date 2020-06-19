@@ -21,11 +21,12 @@ const ecommroutes: Routes = [
 {path:'orderDetails',component:OrderdetailsComponent},
 {path:'copones',component:CoponesComponent}
 ]
+
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(ecommroutes)
+    RouterModule.forChild(ecommroutes)
   ]
 })
 export class EcommRoutingModule { }
