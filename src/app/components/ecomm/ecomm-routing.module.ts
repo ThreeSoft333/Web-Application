@@ -11,6 +11,7 @@ import { OrderdetailsComponent } from './orderdetails/orderdetails.component';
 import { CoponesComponent } from './copones/copones.component';
 
 
+
 const ecommroutes: Routes = [
 {path:'brands',component:BrandsComponent},
 {path:'categories',component:CategoriesComponent},

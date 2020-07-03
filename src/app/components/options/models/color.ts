@@ -1,6 +1,6 @@
-export class Brand {
+export class Color {
     id:number;
     arabicName:string;
     englishName:string;
-    imgUrl:string;
+    hexCode:string;
 }

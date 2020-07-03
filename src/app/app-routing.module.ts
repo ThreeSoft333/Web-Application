@@ -16,7 +16,11 @@ export const Approutes: Routes = [
    {
       path:'ecomm',
       loadChildren:() => import('./components/ecomm/ecomm.module').then(m => m.EcommModule)
-   }
+   },
+   {
+    path:'option',
+    loadChildren:() => import('./components/options/options.module').then(m => m.OptionsModule)
+ }
   ]
 }
 ];

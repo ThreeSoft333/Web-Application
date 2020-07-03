@@ -27,8 +27,12 @@
               "src/assets/dist/css/pages/login-register-lock.css",
               "src/assets/dist/css/pages/ecommerce.css",
               "src/assets/assets/node_modules/morrisjs/morris.css",
+              "src/assets/assets/node_modules/toast-master/css/jquery.toast.css",
               "src/assets/dist/css/style.min.css",
               "./node_modules/dropify/dist/css/dropify.min.css",
+              "src/assets/assets/node_modules/switchery/dist/switchery.min.css",
+              "./node_modules/ngx-ui-switch/ui-switch.component.css",
+              "./node_modules/@ng-select/ng-select/themes/default.theme.css",
               "src/styles.css"
             ],
             "scripts": [
@@ -54,6 +58,10 @@
               "src/assets/assets/node_modules/morrisjs/morris.min.js",
               "src/assets/dist/js/ecom-dashboard.js",
               "./node_modules/dropify/dist/js/dropify.min.js",
+              "src/assets/assets/node_modules/toast-master/js/jquery.toast.js",
+              "src/assets/dist/js/pages/toastr.js",
+              "src/assets/assets/node_modules/switchery/dist/switchery.min.js",
+              
               "src/assets/customscript.js"
             ]
           },
@@ -68,7 +76,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
+              "extractCss": false,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,

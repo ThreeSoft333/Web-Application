@@ -15,11 +15,19 @@ import { AuthService } from './auth.service';
 import { EcommModule } from './components/ecomm/ecomm.module';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { NgSelectModule } from '@ng-select/ng-select';
 import {NgxWebstorageModule} from 'ngx-webstorage';
-import { NgxUiLoaderModule } from 'ngx-ui-loader';
 import { RouterModule } from '@angular/router';
 import {Approutes} from './app-routing.module';
+import {HttpClient,HttpClientModule} from '@angular/common/http';
+import { Globale } from 'src/assets/Global';
+import { CategoryService } from './components/ecomm/services/category.service';
+import { UiSwitchModule } from 'ngx-ui-switch';
+import { SubcategoryService } from './components/ecomm/services/SubCategory.service';
+import { OptionsModule } from './components/options/options.module';
+import { ProductService } from './components/ecomm/services/Product.service';
+import { ColorService } from './components/options/services/color.service';
+import { SizeService } from './components/options/services/size.service';
+
 
 @NgModule({
   declarations: [
@@ -36,14 +44,15 @@ import {Approutes} from './app-routing.module';
   imports: [
     BrowserModule,
     EcommModule,
+    OptionsModule,
     NgxPaginationModule,
     Ng2SearchPipeModule,
-    NgSelectModule,
     NgxWebstorageModule.forRoot(),
-    NgxUiLoaderModule,
-    RouterModule.forRoot(Approutes,{useHash:true})
+    HttpClientModule,
+    RouterModule.forRoot(Approutes,{useHash:true}),
+    UiSwitchModule
   ],
-  providers: [AuthService],
+  providers: [AuthService,Globale,CategoryService,SubcategoryService,ProductService,ColorService,SizeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

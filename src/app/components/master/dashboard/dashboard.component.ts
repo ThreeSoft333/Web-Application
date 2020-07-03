@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class DashboardComponent implements OnInit {
 
   mySubscription: any;
-  constructor(private router:Router) { 
+  constructor(private router:Router,private ngxLoader: NgxUiLoaderService) { 
     
   }
 

@@ -1,0 +1,15 @@
+input.ng-invalid {
+    border-left: 2px solid red;
+  }
+
+  input.ng-valid {
+    border-left: 2px solid green;
+  }
+
+  #SubCatg.ng-invalid {
+    border-left: 2px solid red;
+  }
+
+  #SubCatg.ng-valid {
+    border-left: 2px solid green;
+  }
