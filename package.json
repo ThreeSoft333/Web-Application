@@ -28,7 +28,7 @@
     "ngx-ui-loader": "^9.1.1",
     "ngx-ui-switch": "^9.0.2",
     "ngx-webstorage": "^5.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
